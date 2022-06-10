@@ -1,7 +1,5 @@
 import 'dart:convert';
 
-import 'package:collection/collection.dart';
-
 class TransferRequest {
   String recipient;
   double? amount;
@@ -77,13 +75,12 @@ class TransferRequest {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-    final listEquals = const DeepCollectionEquality().equals;
 
     return other is TransferRequest &&
         other.recipient == recipient &&
         other.amount == amount &&
         other.splToken == splToken &&
-        listEquals(other.reference, reference) &&
+        other.reference == reference &&
         other.label == label &&
         other.message == message &&
         other.memo == memo;

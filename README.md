@@ -26,7 +26,7 @@ Use this plugin in your Dart/Flutter app to:
 
 ## Getting started
 
-This plugin relies on no additional dependencies to get started with Solana Pay. Once you have created a wallet and have a public address on the Solana network, you will be able to author transaction requests directly in-app, with no server required.
+This package bundles everything needed to get started with Solana Pay. Once you have created a wallet and have a public address on the Solana network, you will be able to author transaction requests directly in-app, with no server required.
 
 ## Usage
 
@@ -46,8 +46,11 @@ String requestURL = encodeTransferRequestURL(TransferRequest(
 ## Additional information
 
 [Solana Pay website](https://solanapay.com)
+
 [Solana Pay documentation](https://docs.solanapay.com)
+
 [Solana Pay specification](https://github.com/solana-labs/solana-pay/blob/master/SPEC.md)
+
 [Original JS package](https://github.com/solana-labs/solana-pay)
 
 ## DISCLAIMER
